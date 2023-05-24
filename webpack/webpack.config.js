@@ -1,6 +1,8 @@
-const path = require('path');
+var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/app.js',
   mode: "development",
   module: {
     rules: [
@@ -30,12 +32,20 @@ module.exports = {
         },
       ]
      },
-
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
+    publicPath: '/',
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  devServer: {
+    historyApiFallback: true,
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/app_index.html'
+    })
+  ]
 };

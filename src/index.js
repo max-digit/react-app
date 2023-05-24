@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
 
 function Square(props){
@@ -8,7 +9,7 @@ function Square(props){
           {props.value}
         </button>
       );
-}
+};
 
 class Board extends React.Component {
   renderSquare(i) {
@@ -19,7 +20,6 @@ class Board extends React.Component {
         />
       );
     };
-
 
   render() {
       return (
@@ -42,7 +42,7 @@ class Board extends React.Component {
       </div>
       );
   }
-}
+};
   
 class Game extends React.Component {
   constructor(props) {
@@ -125,13 +125,12 @@ class Game extends React.Component {
       </div>
     );
   }
-}
-  
-  // ========================================
-  
-  const root = ReactDOM.createRoot(document.getElementById("root"));
-  root.render(<Game />);
+};
 
+
+// ========================================
+  
+  
   function calculateWinner(squares) {
     const lines = [
       [0, 1, 2],
@@ -151,3 +150,6 @@ class Game extends React.Component {
     }
     return null;
   }
+
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<Game />);
