@@ -77,8 +77,7 @@ const MyResponsiveLine = ( { data /* see data tab */ } ) => (
     />
 )
 
-
-var data = [
+let data = [
     {
       "id": "japan",
       "color": "hsl(302, 70%, 50%)",

@@ -1,1 +1,1 @@
-### This is the application to visualize your data in a pretty way.
+### Application to visualize your data in a pretty way.
