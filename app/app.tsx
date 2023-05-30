@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import { ResponsiveLine } from '@nivo/line';
 import './app.css';
@@ -11,7 +11,7 @@ import './app.css';
 // you'll often use just a few of them.
 
 
-const MyResponsiveLine = ( { data /* see data tab */ } ) => (
+const MyResponsiveLine = ( { data /* see data tab */ }:any ) => (
     <ResponsiveLine
         data={data}
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
@@ -351,5 +351,5 @@ let data = [
   ];
 
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+  const root = createRoot(document.getElementById("root")!);
 root.render(<MyResponsiveLine data={data} />);

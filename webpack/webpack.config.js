@@ -2,7 +2,7 @@ var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './app/app.js',
+  entry: './app/app.tsx',
   mode: "development",
   module: {
     rules: [
