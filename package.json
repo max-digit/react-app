@@ -48,6 +48,10 @@
     "babel-loader": "^9.1.2",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
+    "d3-color": "^3.1.0",
+    "d3-interpolate": "^3.0.1",
+    "d3-scale": "^4.0.2",
+    "d3-scale-chromatic": "^3.0.0",
     "d3-shape": "^3.2.0",
     "html-webpack-plugin": "^5.5.1",
     "prop-types": "^15.8.1",
@@ -57,7 +61,8 @@
     "typescript": "^5.0.4",
     "webpack": "^5.82.1",
     "webpack-cli": "^5.1.1",
-    "webpack-dev-server": "^4.15.0"
+    "webpack-dev-server": "^4.15.0",
+    "webpack-merge": "^5.9.0"
   },
   "main": "app/app.tsx"
 }
